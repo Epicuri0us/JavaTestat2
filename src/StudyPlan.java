@@ -103,4 +103,12 @@ public class StudyPlan {
 			topModule.setPrerequisites(prerequisites);
 		}
 	}
+	
+	public Map<String, Module> getModules() {
+		return Modules;
+	}
+
+	public void setModules(Map<String, Module> modules) {
+		Modules = modules != null ? modules : new HashMap<String, Module>();
+	}
 }
